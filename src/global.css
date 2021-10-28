@@ -1,0 +1,95 @@
+:root {
+    --white: #EEEEEE;
+    --secondary-white: #E5E5E5;
+    --input-white: #FFFFFF;
+    --black: #222222;
+    --secondary-black:#333333;
+    --blue: #38A5FF;
+    --evening-blue: #191B27;
+    --secondary-evening-blue: #21232E;
+    --purple: #525EFF;
+    --cyan: #5CE1E6;
+    --blue-gradient: linear-gradient(to right, #5CE1E6 , #38A5FF, #525EFF);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400;500;600;700&display=swap');
+  
+  body {
+    margin: 0;
+    font-family: 'Saira', 'Roboto', 'Oxygen',
+     'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #2c2c2c;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container .form {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E9E9;
+  }
+  
+  .container .form-container {
+    width: 55%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s;
+  }
+  .container .form-elements {
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s;
+  }
+  
+  .container .form-container .btn-primary {
+    height: 56px;
+    margin-top: 20px;
+    background-image: var(--blue-gradient);
+    color: white;
+  }
+  
+  .container .form-container .btn-primary:disabled {
+    background-color: #ddd;
+    background-image: none;
+  }
+  
+  .container .form-container .btn-text {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+  } 
