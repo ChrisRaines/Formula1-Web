@@ -21,6 +21,12 @@
     align-items: center;
 }
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 ul {
     align-items: center;
 }
@@ -34,3 +40,4 @@ li {
 li:hover {
     color: crimson;
 }
+

@@ -1,16 +1,11 @@
-import { useState } from "react";
-import FormHeader from "./components/Header";
+import React from 'react';
 import './global.css'
-import Busca from "./pages/Busca";
-// import Home from "./pages/Home";
+import Rotas from "./Routes"
+
 
 function App() {
-  const [step,setStep] = useState(0);
-  return (
-    <div>
-      <FormHeader setStep={setStep} />
-      <Busca step={step}/>
-    </div>
+  return (  
+     <Rotas />
   );
 }
 

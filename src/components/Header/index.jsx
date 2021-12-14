@@ -2,21 +2,20 @@ import React from 'react';
 import './style.css';
 import '../../global.css';
 import logo from '../../img/Logo.png';
+import { Link } from 'react-router-dom';
 
-function FormHeader(props) {
+function Header() {
     return (
-
         <div className="header-container">
             <img id="logo" src={logo} alt="" />
             <ul className="menu">
-                <li onClick={() => props.setStep(0)}>Home</li>
-                <li onClick={() => props.setStep(1)}>Buscar Por Temporada</li>
-                <li onClick={() => props.setStep(2)}>Buscar Piloto</li>
-                <li onClick={() => props.setStep(3)}>Buscar Equipes</li>
+                <Link to='/'><li>Home</li></Link>
+                <Link to='/temporada'><li>Buscar Por Temporada</li></Link>
+                <Link to='/piloto'><li>Buscar Piloto</li></Link>
+                <li>Buscar Equipes</li>
             </ul>
         </div>
-
     );
 }
 
-export default FormHeader;
+export default Header;

@@ -1,17 +1,19 @@
+import Header from '../../components/Header';
 import '../../global.css'
 import pilotos from '../../img/pilotos.png'
 import './style.css'
 
-export default function Home(){
+export default function Home() {
     return (
         <>
-        <section className="container-home">
+            <Header />
+            <section className="container-home">
 
-        <div className="mascara"></div>
+                <div className="mascara"></div>
 
-        <img src={pilotos} alt="foto dos pilotos" />
+                <img src={pilotos} alt="foto dos pilotos" />
 
-        </section>
+            </section>
         </>
     );
 }
